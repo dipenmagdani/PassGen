@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    font-family: 'Karla', sans-serif;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #1F2937;
+    position: relative;
+    width: 90%;
+    max-width: 550px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    transition: 3s;
+}
+
+.container .header-password {
+    margin: 20px 0;
+}
+
+.container .header-password .head-gen,
+.container .header-password .head-pass {
+    font-size: 5vw; /* Use responsive font size */
+}
+
+.container .header-password .head-gen {
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.container .header-password .head-pass {
+    color: #4ADF86;
+    font-weight: bold;
+}
+
+.container .header-password .head-desc {
+    font-family: 'Inter', sans-serif;
+    color: #D5D4D8;
+    font-size: 4vw; /* Use responsive font size */
+    opacity: 0.8;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container .btn-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container .btn-class #inputLength {
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    width: 80%;
+    max-width: 200px;
+    height: 45px;
+    color: #55F991;
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.container .btn-class #inputlength:focus-visible {
+    border: none;
+}
+
+.container .btn-class a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container .btn-class a:hover {
+    opacity: 0.9;
+    background-color: white;
+    color: #10B981;
+}
+
+.container .btn {
+    background-color: #10B981;
+    width: 80%;
+    max-width: 200px;
+    height: 42px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.container .line {
+    width: 100%;
+    border: 1px solid #2F3E53;
+    margin: 20px 0;
+}
+
+.container .show-pass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .pass-container {
+    position: relative;
+    width: 80%;
+}
+
+.container .show-pass input {
+    width: 100%;
+    height: 39px;
+    color: #55F991;
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+}
+
+.container .copy-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4ADF86;
+    cursor: pointer;
+}
+
+.container .copy-icon:hover {
+    color: #10B981;
+}
+
+.container .copyText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container .copyText h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 13px;
+    color: #b4c9e8;
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: #4ADF86;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+    .container {
+        padding: 40px;
+    }
+
+    .container .header-password .head-gen,
+    .container .header-password .head-pass {
+        font-size: 2.5vw;
+    }
+
+    .container .header-password .head-desc {
+        font-size: 1.4vw;
+    }
+
+    .container .btn-class {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container .btn-class #inputLength {
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    .container .btn {
+        width: 191px;
+    }
+
+    .container .show-pass {
+        flex-direction: row;
+    }
+
+    .container .copyText {
+        flex-direction: row;
+    }
+}

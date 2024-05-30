@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/reset-password.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <video id="background-video" autoplay loop muted>
+            <source src="assets/video.mp4" type="video/mp4">
+          </video>
+        <div class="header-password">
+            <h1 class="head-gen">Generate a</h1>
+            <h1 class="head-pass">random password</h1><br>
+            <h2 class="head-desc">Never use an insecure password again.</h2>
+        </div>
+
+        <div class="btn-class">
+            <input type="number" id="inputLength" placeholder="Enter the Length">
+            <a href="#" class="btn" onclick="generatePassword()">Generate Passwords</a>
+            
+        </div>
+    
+        <div class="line"></div>
+        <div class="show-pass">
+            <input type="text" id="pass-1" disabled onclick="copyFirst()">
+            <input type="text" id="pass-2" disabled onclick="copySecond()">
+        </div> 
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/204d9694fe.js" crossorigin="anonymous"></script>
+</body>
+</html>
